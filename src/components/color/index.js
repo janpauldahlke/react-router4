@@ -27,4 +27,5 @@ Color.propTypes = {
   text: PropTypes.string.isRequired,
 }
 
-export default withRouter(Color);
+export default withRouter(Color); // we need this, to get stub router props to component //o
+// export default Color; // this would lead into an error on  <h3>{props.match.path}</h3> cuz we havent wrapped the component with the routerObject
