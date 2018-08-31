@@ -4,12 +4,12 @@ const Header = () => {
 
     return (
         <header className={'header'}>
-            <div>
-              <img src="http://i.imgur.com/QpQfZUQg.jpg" />
-             </div>
+            
+            <img src="http://i.imgur.com/QpQfZUQg.jpg" />
+            
 
             <div className={'header-text'}>
-                React Router
+                React Router HARHAR
             </div>
 
         </header>

@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
 
     return (
         <div className={'leftNavContainer'}>
-          in sidebar
+          <Link to="/" className={'navLink'}>Home</Link>
         </div>
     );
 };
