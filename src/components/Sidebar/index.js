@@ -20,12 +20,12 @@ const Sidebar = () => {
 
     /* to DRY we do this object */
     const links = [
-        {name: 'Home', url: '/'},
         {name: 'Prompt', url: '/prompt' },
         {name: 'PropViewer' , url: '/props' },
+        {name: 'Color', url: '/color'},
         {name: '404 Error', url: '/error' },
     ];
-
+    //iterate over it in a renderHelper
     let linksComponents = links.map((link, index) => {
         return (
             <li key={index} className={'nav'}>
@@ -36,15 +36,19 @@ const Sidebar = () => {
                     {link.name}</NavLink>
             </li>
         )
-    })
-
+    });
+    //return homeroute still because its exact
+    //consume the renderhelper
     return (
         <div className={'leftNavContainer'}>
             <ul>
+                <li  className={'nav'}>
+                    <NavLink to="/" activeClassName={'activeNavLink'} className={'navLink'} exact>Home</NavLink> <br/>
+                </li>
                {linksComponents}
             </ul>
         </div>
-    )
+    );
 };
 
 export default Sidebar;
