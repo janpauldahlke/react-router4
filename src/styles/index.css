@@ -72,5 +72,11 @@ li.nav {
   background: black;
   color: white;
   font-size: 25vh;
-  text-align: center
+  text-align: center;
+  min-height: 100vh;
+  margin-left: 180px; /*sidebar lol */
 }
+
+/*there should be a reset css somewhere
+  https://meyerweb.com/eric/tools/css/reset/
+*/

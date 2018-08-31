@@ -12,6 +12,7 @@ const Sidebar = () => {
           <NavLink to="/" activeClassName={'activeNavLink'} className={'navLink'} exact>Home</NavLink> <br/>
           <NavLink to="/prompt" activeClassName={'activeNavLink'} className={'navLink'}>Prompt</NavLink><br/>
           <NavLink to="/props" activeClassName={'activeNavLink'} className={'navLink'}>props</NavLink><br/>
+          <NavLink to="/anytitlethatdoesnotexistorsoorevendifferentorelseorwhoknowsbutinanycaseitshouldshowtheERRORpage" activeClassName={'activeNavLink'} className={'navLink'}>404 page</NavLink><br/>
         </div>
     );
 };
