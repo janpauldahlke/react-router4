@@ -15,7 +15,6 @@ class NameForm extends React.Component {
       };
     }
 
-
   handleChange (e) {
     this.setState({
       ...this.state,
@@ -24,7 +23,7 @@ class NameForm extends React.Component {
   }
 
   pseudoValidate () {
-    return this.state.firstName === 'peter' && this.state.lastName === 'parker' ? this.setState({ ...this.state, valid: true}) : null
+    return (this.state.firstName === 'peter' && this.state.lastName === 'parker') ? this.setState({ ...this.state, valid: true}) : this.setState({ ...this.state, valid: false});
   }
 
   render () {
@@ -52,7 +51,7 @@ class NameForm extends React.Component {
         {/*consider this a user feedback */}
 
         { this.state.valid && (
-          <h1>you are spiderman!  </h1>
+          <h1>you are spiderman! so you are allowed to leave this page </h1>
         )}
         
       </div>

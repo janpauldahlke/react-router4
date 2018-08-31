@@ -7,6 +7,7 @@ const Sidebar = () => {
         <div className={'leftNavContainer'}>
           <Link to="/" className={'navLink'}>Home</Link> <br/>
           <Link to="/prompt" className={'navLink'}>Prompt</Link><br/>
+          <Link to="/props" className={'navLink'}>props</Link><br/>
         </div>
     );
 };
