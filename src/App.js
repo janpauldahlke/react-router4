@@ -34,7 +34,7 @@ export default class App extends React.Component {
 
            <Switch>
              
-             <Route path="/" component={Home} exact />
+             <Route path="/" component={Home} exact/>
              <Route path="/prompt" component={Prompt} />
              <Route path="/props" component={PropsViewer} />
              <Route path="*" component= {Error} />

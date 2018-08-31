@@ -1,14 +1,14 @@
-a.activeNavLink {
-  font-weight: bold;
+a.navLink {
   font-size: 18px;
   list-style-type: none;
   color: #ffffff;
 }
 
-a.navLink {
+a.activeNavLink {
+  font-weight: bold;
   font-size: 18px;
   list-style-type: none;
-  color: #ffffff;
+  color: #68bd7d;
 }
 
 a, a:active, a:visited, a:hover {
