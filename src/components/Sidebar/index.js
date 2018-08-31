@@ -24,6 +24,7 @@ const Sidebar = () => {
         {name: 'PropViewer' , url: '/props' },
         {name: 'Color', url: '/color'},
         {name: '404 Error', url: '/error' },
+        {name: 'Logging' , url: '/logging'},
     ];
     //iterate over it in a renderHelper
     let linksComponents = links.map((link, index) => {

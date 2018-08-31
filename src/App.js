@@ -10,6 +10,7 @@ import Error from './components/Error';
 import Prompt from './components/Prompt'
 import PropsViewer from './components/Prompt/propViewer';
 import Color from './components/color';
+import Logging from './components/logging';
 
 export default class App extends React.Component {
 
@@ -39,6 +40,7 @@ export default class App extends React.Component {
              <Route path="/prompt" component={Prompt} />
              <Route path="/props" component={PropsViewer} />
              <Route path="/color" render={() => {return (<Color text={'a random color welcome'} color={'#'+Math.floor(Math.random()*16777215).toString(16)}/>) }} /> {/* the usage for rendering routes with props needs the render attribute like we see here */}
+             <Route path="/logging" component={Logging} />
              <Route component= {Error} />{/*  removing the path here is more precise the path='*' */}
            </Switch>
           
