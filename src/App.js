@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Home from './components/Home';
 import Error from './components/Error';
+import Prompt from './components/Prompt'
 
 export default class App extends React.Component {
 
@@ -33,6 +34,7 @@ export default class App extends React.Component {
            <Switch>
              
              <Route path="/" component={Home} exact />
+             <Route path="/prompt" component={Prompt} exact />
              <Route path="*" component= {Error} />
            </Switch>
           
