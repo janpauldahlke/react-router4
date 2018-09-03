@@ -21,7 +21,7 @@ class LoggingLink extends React.Component {
       <Link
         {...rest}
         onClick={(e) => {
-          console.log('for sakes of curioisty', e);
+          //console.log('for sakes of curioisty', e);
           this.handleClick();
         }}
       >
