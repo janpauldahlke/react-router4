@@ -16,6 +16,8 @@ import PrivateRoute from './components/secure/privateRoute';
 import Login from './components/login';
 import Logout from './components/login/logout';
 import SmartColor from './components/SmartColor';
+import People from './components/people';
+import PersonProfileContainer from './components/people/personProfileContainer';
 
 export default class App extends React.Component {
 
@@ -43,6 +45,8 @@ export default class App extends React.Component {
              
              <Route path="/" component={Home} exact/>
              <Route path="/prompt" component={Prompt} />
+             <Route path="/people/:id" component={PersonProfileContainer} />{/*  // here is how we consume the parametrized routes */}
+             <Route path="/people" component={People} />
              <Route path="/props" component={PropsViewer} />
              <Route path="/:text/:color" component={SmartColor}  />
              <Route path="/color" render={() => {return (<Color text={'a random color welcome'} color={'#'+Math.floor(Math.random()*16777215).toString(16)}/>) }} /> {/* the usage for rendering routes with props needs the render attribute like we see here */}
