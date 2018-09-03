@@ -23,6 +23,7 @@ const Sidebar = () => {
         {name: 'Prompt', url: '/prompt' },
         {name: 'PropViewer' , url: '/props' },
         {name: 'Color', url: '/color'},
+        {name: 'Private Route', url:'/private'},
         {name: '404 Error', url: '/error' },
         {name: 'Logging' , url: '/logging'},
     ];

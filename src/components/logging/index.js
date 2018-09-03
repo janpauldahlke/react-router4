@@ -1,5 +1,5 @@
 import React from 'react';
-//import { Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 import Message from './message';
 import LogginLink from './link';
@@ -20,7 +20,7 @@ const Logging = ({ match }) => {
       </h5>
 
       <LoggingRoute path={`${match.url}/lorem/:eid`} component={Message} exact></LoggingRoute>
-     {/*  <Route path={`${match.url}`} component={Message} exact /> */}
+      <Route path={`${match.url}`} component={Message} exact />
     </div>
   );
 }
