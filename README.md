@@ -9,3 +9,5 @@ npm install
 ```
 npm run start
 ```
+
+carefully looking, there is a deeper nested project here by d-starr, ` cd ps-routes-redux/`  and do some npm magik
