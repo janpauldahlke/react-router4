@@ -23,6 +23,7 @@ const Sidebar = () => {
         {name: 'Prompt', url: '/prompt' },
         {name: 'PropViewer' , url: '/props' },
         {name: 'Color', url: '/color'},
+        /* {name: 'SmartColor', url:'/green/#00ff00'}, */
         {name: 'Private Route', url:'/private'},
         {name: '404 Error', url: '/error' },
         {name: 'Logging' , url: '/logging'},
@@ -46,6 +47,7 @@ const Sidebar = () => {
             <ul>
                 <li  className={'nav'}>
                     <NavLink to="/" activeClassName={'activeNavLink'} className={'navLink'} exact>Home</NavLink> <br/>
+                    <NavLink to="/color/green/#00ff00" activeClassName={'activeNavLink'} className={'navLink'} exact>SmartColor</NavLink> <br/>
                 </li>
                {linksComponents}
             </ul>
