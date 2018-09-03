@@ -49,6 +49,7 @@ const Sidebar = () => {
                 <li  className={'nav'}>
                     <NavLink to="/" activeClassName={'activeNavLink'} className={'navLink'} exact>Home</NavLink> <br/>
                     <NavLink to="/color/green/#00ff00" activeClassName={'activeNavLink'} className={'navLink'} exact>SmartColor</NavLink> <br/>
+                    <NavLink to="/color/yellow/#ffff00" activeClassName={'activeNavLink'} className={'navLink'} exact>RecursiveColor</NavLink> <br/>
                 </li>
                {linksComponents}
             </ul>
